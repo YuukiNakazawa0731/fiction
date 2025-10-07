@@ -1,0 +1,628 @@
+@charset "UTF-8";
+/*
+fiction
+other
+=====[rgb]=======
+ロゴ ブルー
+rgb(0,176,240)
+=================
+*/
+
+/*===[コンテンツ共通]===*/
+#other-container {
+  min-height: 80vh;
+  background-color: #ffffff;
+}
+
+.section-title {
+  padding: 5%;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+#section-title-txt {
+  margin: 3% 30%;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 0.1rem solid #000000;
+}
+
+.section-title p {
+  padding: 0 10%;
+  line-height: 2;
+  font-size: 1.6rem;
+}
+
+.article-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 0;
+  width: 100%;
+  background-color: #dcdcdc;
+}
+
+.article-title-txt {
+  padding: 0 10%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.return-btn-outer {
+  margin: 5% auto;
+  width: 60%;
+  text-align: center;
+}
+
+/*===[news.php]===*/
+#news-result-container {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
+
+#news-result-side {
+  padding: 5%;
+}
+
+.news-result-date {
+  margin: 5% 0;
+  cursor: pointer;
+}
+/*news-result hover*/
+.news-result-date:hover {
+  font-weight: bold;
+  color: #0000ff;
+}
+
+#news-result-outer {
+  width: 80%;
+}
+
+.news-cont {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 2% 0;
+  padding: 2% 0;
+  width: 100%;
+  border-bottom: 0.1rem solid #cecece;
+  cursor: pointer;
+}
+/*news-cont hover*/
+.news-cont:hover {
+  opacity: 0.8;
+}
+
+.news-cont::after {
+  position: absolute;
+  content: ">";
+  opacity: 0.8;
+  right: 5%;
+  font-size: 2rem;
+}
+
+.news-date {
+  margin: 0 2.5%;
+  width: 12%;
+}
+
+.news-category-notice {
+  display: inline-block;
+  text-align: center;
+  margin: auto 2%;
+  padding: 0.3% 1.5% 0.2%;
+  width: 10%;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
+  background-color: #ececec;
+}
+
+.news-category-pickup {
+  display: inline-block;
+  text-align: center;
+  margin: auto 2%;
+  padding: 0.3% 1.5% 0.2%;
+  width: 10%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 0.1rem solid #000000;
+  border-radius: 0.5rem;
+  background-color: #ff6161;
+}
+
+.news-txt {
+  margin-left: 5%;
+  width: auto;
+}
+
+/*===[news_ex.php]===*/
+#news-ex-outer {
+  margin: auto;
+  padding: 5% 0;
+  width: 70%;
+}
+
+#news-ex-head {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  padding: 5% 0;
+  width: 100%;
+}
+
+.news-ex-title {
+  font-size: 2rem;
+  border-bottom: 0.2rem solid #000000;
+}
+
+.news-ex-txt {
+  margin-bottom: 15%;
+  padding: 2% 0;
+  width: 100%;
+  line-height: 2;
+  border-bottom: 0.15rem solid #b9b9b9;
+}
+
+/*===[contact.php]===*/
+/*==[※問い合わせフォーム]==*/
+#contact-target {
+  position: relative;
+  margin-top: 5%;
+}
+
+#contact-form {
+  overflow-y: scroll;
+  /*スクロールバー非表示*/
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20% 10%;
+  width: 100%;
+}
+/*スクロールバー非表示 Chrome・Safari*/
+#contact-form::-webkit-scrollbar {
+  display: none;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.input-list {
+  display: flex;
+  margin-top: 2.5%;
+  width: 25%;
+  font-size: 1.4rem;
+}
+
+.required-icon {
+  margin-left: 1.5%;
+  color: #ff0000;
+}
+
+.input-item {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  white-space: nowrap;
+  width: 70%;
+}
+
+.input-outer {
+  margin-right: 5%;
+  width: 100%;
+}
+
+.input-label {
+  display: flex;
+  height: 10%;
+  font-size: 1.2rem;
+}
+
+.input-case-s {
+  margin-right: 10%;
+  padding: 3% 5%;
+  width: auto;
+  letter-spacing: 0.3rem;
+  border: 0.1rem solid #000000;
+}
+.input-case-s.err {
+  border: 0.2rem solid #ff0000;
+}
+
+.input-case-m {
+  padding: 1.5% 2.5%;
+  width: 50%;
+  letter-spacing: 0.3rem;
+  border: 0.1rem solid #000000;
+}
+.input-case-m.err {
+  border: 0.2rem solid #ff0000;
+}
+
+.input-case-l {
+  padding: 1.5% 2.5%;
+  width: 100%;
+  letter-spacing: 0.3rem;
+  border: 0.1rem solid #000000;
+}
+.input-case-l.err {
+  border: 0.2rem solid #ff0000;
+}
+
+#input-prefectures {
+  padding: 1.8% 1.5%;
+  resize: none;
+  width: 30;
+  border: 0.1rem solid #000000;
+}
+
+#contact-txt {
+  padding: 1.5% 2%;
+  resize: none;
+  height: 20rem;
+  width: 100%;
+  font-size: 1.4rem;
+  border: 0.1rem solid #000000;
+}
+
+.privacy-item {
+  padding-top: 5%;
+  text-align: left;
+  width: 70%;
+}
+
+.privacy-lead {
+  padding: 1.5% 0;
+  width: 95%;
+  line-height: 1.8;
+}
+
+#privacy-link {
+  display: inline;
+  width: auto;
+  text-decoration: underline;
+  color: #0000ff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/*privacy-link hover*/
+#privacy-link:hover {
+  font-weight: 600;
+}
+
+#privacy-check-area {
+  position: relative;
+  margin: 3%;
+}
+
+/*チェックボックス*/
+#privacy-checkbox {
+  opacity: 0;
+}
+#privacy-check-label {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+}
+#privacy-check-label::before {
+  position: absolute;
+  content: "";
+  top: 15%;
+  left: -7.5%;
+  display: block;
+  height: 1.6rem;
+  width: 1.6rem;
+  border: 0.1rem solid #000000;
+  border-radius: 0.2rem;
+  background-color: #ffffff;
+}
+#privacy-check-label::after {
+  position: absolute;
+  content: "";
+  opacity: 0;
+  top: -3%;
+  left: -5%;
+  display: block;
+  height: 1.8rem;
+  width: 0.8rem;
+  border-right: 0.3rem solid #01bbff;
+  border-bottom: 0.2rem solid #01bbff;
+  transform: rotate(45deg);
+}
+#privacy-checkbox:checked + #privacy-check-label::after {
+  opacity: 1;
+}
+
+#check-submit-outer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+#check-submit {
+  padding: 1%;
+  width: 30%;
+  font-size: 1.8rem;
+  border: 0.1rem solid #000000;
+  cursor: pointer;
+}
+
+#close-contact-btn {
+  position: fixed;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 5%;
+  height: 5%;
+  width: 10%;
+  border-radius: 0.3rem;
+  background-color: #818181e6;
+  cursor: pointer;
+}
+
+.error-nav {
+  margin: 5% 0;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+/*エラーメッセージ*/
+.err-first_name,
+.err-last_name,
+.err-first_ruby,
+.err-last_ruby {
+  margin-left: 5%;
+  color: #ff0000;
+}
+.err-post_code,
+.err-prefectures,
+.err-address_1,
+.err-address_2,
+.err-tel_num,
+.err-contact_txt,
+.err-mail_ad,
+.err-signup_pass {
+  margin-left: 1%;
+  color: #ff0000;
+}
+.err-privacy_check {
+  position: absolute;
+  bottom: -2%;
+  left: 3%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ff0000;
+}
+
+#input-prefectures.err {
+  border: 0.2rem solid #ff0000;
+}
+#contact-txt.err {
+  border: 0.2rem solid #ff0000;
+}
+#privacy-check-label.err:before {
+  border: 0.2rem solid #ff0000;
+}
+
+/*===[contact_check.php]===*/
+#check-form {
+  margin: auto;
+  padding: 3% 5%;
+  width: 60%;
+  background-color: #ebebeb;
+}
+
+#result-cont-outer {
+  padding: 3%;
+  border: 0.1rem solid #979797b3;
+  background-color: #ffffff;
+}
+
+.result-cont {
+  display: flex;
+  margin-bottom: 3%;
+}
+
+.result-list {
+  width: 25%;
+  font-weight: bold;
+}
+
+.result-item {
+  width: 75%;
+}
+
+#result-check {
+  margin-top: 5%;
+  text-align: center;
+  line-height: 2;
+}
+
+#result-check-btn-outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% auto 0;
+  width: 60%;
+}
+
+/*[モーダル]*/
+#contact-thank-ol {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000cc;
+  cursor: pointer;
+}
+
+#thank-container {
+  position: fixed;
+  top: 30%;
+  left: 25%;
+  padding: 2%;
+  height: 25%;
+  width: 50%;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border: 0.3rem solid #01bbff;
+  border-radius: 0.3rem;
+  background-color: #ffffff;
+}
+
+#thank-lead {
+  padding: 3%;
+  line-height: 1.8;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+#return-main {
+  position: fixed;
+  top: 80%;
+  left: 25%;
+  width: 50%;
+  text-align: center;
+  color: #ffffff;
+  animation: nav_flash 1.5s linear infinite;
+}
+@keyframes nav_flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*===[privacy.php]===*/
+#privacy-container {
+  padding: 5% 15%;
+  counter-reset: number 0;
+}
+
+#privacy-inner-head {
+  padding: 5% 0;
+  line-height: 2;
+}
+
+.privacy-head {
+  display: flex;
+  align-items: center;
+  padding-top: 5%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-bottom: 0.1rem solid #bdbdbd;
+}
+.privacy-head::before {
+  counter-increment: number 1;
+  content: counter(number) ".";
+  margin-right: 0.5%;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.privacy-lead {
+  padding: 3% 1%;
+  line-height: 2;
+}
+
+.privacy-detail-outer {
+  padding: 1% 0.5%;
+}
+
+.privacy-datail {
+  position: relative;
+  text-indent: 1.4rem;
+  line-height: 2;
+}
+.privacy-datail:before {
+  position: absolute;
+  content: "";
+  top: 1.2rem;
+  left: 0.6rem;
+  display: inline-block;
+  margin-right: 0.4rem;
+  height: 0.3rem;
+  width: 0.3rem;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+#privacy-txt-end {
+  float: right;
+  margin: 10% 3%;
+}
+
+#privacy-container-foot {
+  padding: 5% 15%;
+}
+
+/*===[corp_info.php]===*/
+#corp-info-main {
+  margin: auto;
+  padding: 5% 15%;
+  width: 80%;
+}
+
+.ci-txt-box {
+  display: flex;
+  align-items: center;
+  padding: 3.5%;
+  border-bottom: 0.1rem solid #bdbdbd;
+}
+
+.ci-txt-head {
+  flex-shrink: 0;
+  width: 20%;
+  font-weight: bold;
+}
+
+.ci-txt {
+  width: 65%;
+  line-height: 1.5;
+}
+
+.map-info {
+  width: 25%;
+}
+
+.map-info-link {
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+.map-blank {
+  margin-left: 3%;
+  width: 10%;
+}
+
+#map-main {
+  margin: 5% auto;
+  text-align: center;
+}

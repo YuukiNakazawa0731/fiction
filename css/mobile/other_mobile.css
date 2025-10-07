@@ -1,0 +1,588 @@
+@charset "UTF-8";
+/*
+fiction
+common_mobile
+=====[rgb]=======
+ロゴ ブルー
+rgb(0,176,240)
+=================
+*/
+
+/*===[メインコンテンツ]===*/
+#other-container {
+  margin: 5% auto;
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.section-title {
+  margin: auto;
+  padding: 5%;
+  width: auto;
+  text-align: center;
+}
+
+#section-title-txt {
+  margin: 5% auto;
+  width: 70%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 0.1rem solid #000000;
+}
+
+.section-title p {
+  margin: 10% auto;
+  padding: 0 5%;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.article-title {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3% 0;
+  width: 100%;
+  background-color: #dcdcdc;
+}
+
+.article-title-txt {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.return-btn-outer {
+  display: none;
+}
+
+/*モバイル用スペース*/
+.mobile-space {
+  display: block;
+  content: "";
+  height: 7vh;
+  width: 100%;
+}
+
+/*===[news.php]===*/
+#news-result-container {
+  margin: 5% auto;
+  width: 90%;
+}
+
+#news-result-side {
+  display: none;
+}
+
+#news-result {
+  padding: 10% 3% 20%;
+  height: 80%;
+  width: 100%;
+}
+
+.news-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5% 0;
+  border-bottom: 0.1rem solid #cecece;
+}
+
+.news-cont {
+  margin: 5% auto;
+}
+
+.news-date {
+  margin: 0 2.5%;
+  width: 20%;
+}
+
+.news-category-notice {
+  margin: auto 2%;
+  padding: 0.1% 0;
+  width: 30%;
+  text-align: center;
+  border: 0.1rem solid #000000;
+  background-color: #c4c4c4;
+}
+
+.news-category-pickup {
+  margin: auto 2%;
+  width: 30%;
+  text-align: center;
+  font-size: 1rem;
+  border: 0.1rem solid #000000;
+  background-color: #ff6161;
+}
+
+.news-txt {
+  padding: 2% 5%;
+  width: 95%;
+  text-align: left;
+}
+
+.news-arrow {
+  position: absolute;
+  right: 0.5%;
+  opacity: 0.7;
+  width: 5%;
+}
+
+/*===[news_ex.php]===*/
+#news-ex-outer {
+  margin: auto;
+  height: 60vh;
+  width: 80%;
+}
+
+#news-ex-head {
+  display: flex;
+  align-items: center;
+  margin: 10% auto 5%;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+.news-ex-title {
+  margin: 10% auto 2%;
+  width: 100%;
+  font-size: 1.4rem;
+  border-bottom: 0.1rem solid #000000;
+}
+
+.news-ex-txt {
+  padding: 2% 0;
+  line-height: 1.8;
+  border-bottom: 0.15rem solid #b9b9b9;
+}
+
+/*===[contact_form.php]===*/
+/*==[※問い合わせフォーム]==*/
+.contact-target {
+  margin-top: 5%;
+}
+
+.contact-form {
+  margin: 7% auto;
+  width: 95%;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  width: 100%;
+}
+
+.input-list {
+  display: flex;
+  align-items: center;
+  margin-top: 2.5%;
+  margin-left: 2%;
+  width: 100%;
+  font-weight: bold;
+}
+
+.required-icon {
+  margin-left: 1.5%;
+  font-size: 1.2rem;
+  color: #ff0000;
+}
+
+.input-label {
+  display: flex;
+  white-space: nowrap;
+  padding: 0 2%;
+  width: auto;
+}
+
+.input-item {
+  margin-top: 1%;
+  margin-left: 2%;
+  text-align: left;
+  width: 100%;
+}
+
+.item-outer {
+  width: 100%;
+  line-height: 2;
+}
+
+.item-label {
+  display: flex;
+  padding: 1%;
+  font-weight: bold;
+}
+
+.input-case-s {
+  padding: 2%;
+  width: 98%;
+  letter-spacing: 0.15rem;
+  border: 0.15rem solid #000000;
+}
+.input-case-s.err {
+  border: 0.2rem solid #ff0000;
+}
+
+.input-case-m {
+  padding: 2%;
+  width: 98%;
+  letter-spacing: 0.15rem;
+  border: 0.15rem solid #000000;
+}
+.input-case-m.err {
+  border: 0.2rem solid #ff0000;
+}
+
+.input-case-l {
+  padding: 2%;
+  width: 98%;
+  letter-spacing: 0.15rem;
+  border: 0.15rem solid #000000;
+}
+.input-case-l.err {
+  border: 0.2rem solid #ff0000;
+}
+
+#input-prefectures {
+  padding: 0 2%;
+  resize: none;
+  height: 3.6rem;
+  width: 34rem;
+  letter-spacing: 0.15rem;
+  border-radius: 0.2rem;
+}
+
+#contact-txt {
+  padding: 2%;
+  resize: none;
+  height: 15rem;
+  width: 98%;
+  letter-spacing: 0.15rem;
+  font-size: 1.2rem;
+  border: 0.15rem solid #000000;
+}
+
+.privacy-item {
+  padding: 2%;
+  text-align: left;
+}
+
+.privacy-lead-contact {
+  padding: 2%;
+  line-height: 1.6em;
+}
+
+#privacy-link {
+  display: inline;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #0000ff;
+}
+
+#privacy-check-area {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+
+/*チェックボックス*/
+#privacy-checkbox {
+  -webkit-appearance: auto;
+  -moz-appearance: auto;
+  appearance: auto;
+}
+
+.privacy-check-lead {
+  margin-left: 0.5rem;
+}
+
+#check-submit-outer {
+  margin-top: 5%;
+  text-align: center;
+}
+
+#check-submit,
+#close-contact-btn {
+  margin: 5% auto;
+  padding: 2%;
+  width: 70%;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid #000000;
+  color: #000000;
+  background-color: #dadadae6;
+}
+
+.error-nav {
+  margin-top: 10%;
+  text-align: center;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+/*エラーメッセージ*/
+.err-first_name,
+.err-last_name,
+.err-first_ruby,
+.err-last_ruby {
+  word-break: keep-all;
+  padding-left: 5%;
+  width: 100%;
+  color: #ff0000;
+}
+.err-post_code,
+.err-prefectures,
+.err-address_1,
+.err-address_2,
+.err-tel_num,
+.err-contact_txt,
+.err-mail_ad,
+.err-signup_pass {
+  word-break: keep-all;
+  padding-left: 1%;
+  width: 100%;
+  color: #ff0000;
+}
+.err-privacy_check {
+  position: absolute;
+  top: -15%;
+  left: 7%;
+  color: #ff0000;
+}
+
+#input-prefectures.err {
+  border: 0.15rem solid #ff0000;
+}
+#contact-txt.err {
+  border: 0.15rem solid #ff0000;
+}
+#privacy-check-label.err:before {
+  border: 0.15rem solid #ff0000;
+}
+
+/*===[contact_check.php]===*/
+#check-form {
+  margin: 10% auto;
+  padding: 5%;
+  width: 90%;
+  border: 0.1rem solid #979797b3;
+  background-color: #ebebeb;
+}
+
+#result-cont-outer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5% 0%;
+}
+
+.result-cont {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.result-list {
+  margin-left: 1%;
+  width: 90%;
+  font-weight: bold;
+}
+
+.result-item {
+  width: 90%;
+  padding: 1% 2%;
+}
+
+#result-check {
+  margin-top: 10%;
+  padding: 10% 0;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+}
+
+#result-check-btn-outer {
+  padding: 1% 2%;
+  text-align: center;
+}
+
+#return-contact {
+  margin: 10% auto;
+  padding: 1% 2%;
+  width: 70%;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: 0.1rem solid #979797b3;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#submit-contact {
+  margin: 5% auto;
+  padding: 1% 2%;
+  width: 70%;
+  letter-spacing: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: 0.1rem solid #979797b3;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem #00000033;
+  color: #ffffff;
+  background-color: #1b54ff;
+}
+
+/*[モーダル]*/
+#contact-thank-ol {
+  position: fixed;
+  z-index: 5;
+  top: 0%;
+  left: 0%;
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000cc;
+}
+
+#thank-container {
+  position: absolute;
+  z-index: 10;
+  top: 25%;
+  left: 5%;
+  padding: 10% 5%;
+  height: 35%;
+  width: 90%;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+#thank-lead {
+  margin: 10% 0;
+  font-size: 1.2rem;
+}
+
+#return-main {
+  position: absolute;
+  top: 70%;
+  left: 5%;
+  width: 90%;
+  text-align: center;
+  color: #ffffff;
+  animation: nav_flash 1.5s linear infinite;
+}
+@keyframes nav_flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*===[privacy.php]===*/
+#privacy-container {
+  margin: auto;
+  padding: 5% 0;
+  width: 90%;
+  counter-reset: number 0;
+  font-size: 1.2rem;
+}
+
+#privacy-inner-head {
+  padding: 5%;
+  line-height: 1.6;
+}
+
+.privacy-head {
+  display: flex;
+  margin: 3.5% auto;
+  padding-left: 3%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-bottom: 0.1rem solid rgb(189, 189, 189);
+}
+.privacy-head::before {
+  counter-increment: number 1;
+  content: counter(number) ".";
+  font-weight: bold;
+}
+
+.privacy-lead {
+  margin-bottom: 7%;
+  padding: 0 3%;
+  line-height: 1.6;
+}
+
+.privacy-detail-outer {
+  margin: 5% 3.5%;
+}
+
+.privacy-datail {
+  text-indent: -1rem;
+  line-height: 1.5;
+}
+.privacy-datail:before {
+  position: relative;
+  content: "";
+  top: -0.3rem;
+  display: inline-block;
+  margin-right: 2.5%;
+  height: 0.3rem;
+  width: 0.3rem;
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+#privacy-txt-end {
+  float: right;
+  margin: 20% 3%;
+}
+
+#privacy-container-foot {
+  padding: 5% 7%;
+  counter-reset: number 0;
+  line-height: 1.5;
+}
+
+/*===[corp_info.php]===*/
+#corp-info-main {
+  margin: 10% auto;
+  width: 80%;
+}
+
+.ci-txt-box {
+  display: flex;
+  align-items: center;
+  padding: 3.5%;
+  border-bottom: 0.1rem solid #bdbdbd;
+}
+
+.ci-txt-head {
+  flex-shrink: 0;
+  width: 30%;
+}
+
+.ci-txt {
+  width: 60%;
+  line-height: 1.4;
+}
+
+.map-info {
+  display: none;
+}
+
+#map-main {
+  overflow: hidden;
+  margin: 10% auto;
+  width: 80%;
+  text-align: center;
+}
